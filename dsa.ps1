@@ -30,7 +30,7 @@ $timer = New-Object Windows.Forms.Timer
 $timer.Interval = 100
 
 $timer.Add_Tick({
-    $progress.Value += 2
+    $progress.Value += 20
     if ($progress.Value -ge 100) {
         $timer.Stop()
         [System.Windows.Forms.MessageBox]::Show("System cleanup completed. Sleeping now...","System",0)
